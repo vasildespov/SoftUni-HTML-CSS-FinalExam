@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+
+body {
+  background-color: #6cbdf8;
+  line-height: 1.2;
+}
+
+.page-header {
+  font-size: 25px;
+  font-family: Montserrat, sans-serif;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 35px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+.articles {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  padding: 0px 15px 15px 15px;
+}
+.card {
+  background-color: white;
+  font-family: Helvetica;
+  width: 320px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+.img-container img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.img-container {
+  padding-bottom: 10px;
+}
+.date::before {
+  content: "\f073";
+  font-family: "Font Awesome 5 Free";
+  padding-right: 8px;
+}
+.time::before {
+  content: "\f017";
+  font-family: "Font Awesome 5 Free";
+  padding-right: 8px;
+  padding-left: 40px;
+}
+.read-more {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.read-more i {
+  padding-left: 10px;
+}
+.card-heading,
+.read-more {
+  color: #ff9f1b;
+}
+.card-details {
+  font-size: 12px;
+  padding: 10px 0px 10px 0px;
+  color: #969696;
+  font-weight: 300;
+}
+.card-desc {
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+
+.btn {
+  color: white;
+  font-weight: 600;
+  border: 1px solid white;
+  background-color: #6cbdf8;
+  border-radius: 100px;
+  padding: 12px 32px;
+  text-transform: uppercase;
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}
+@media all and (max-width: 900px) {
+  .articles {
+    flex-direction: column;
+    align-items: center;
+  }
+  .button-container {
+    justify-content: center;
+  }
+}
